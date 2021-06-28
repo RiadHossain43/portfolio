@@ -64,9 +64,9 @@ export default function LandingPage() {
                 <hr className="line-success" />
                 <h3>Software engineer</h3>
                 <p>
-                  The design system comes with three pre-built pages to help
-                  you get started faster. You can change the text and images
-                  and you're good to go.
+                  Self taught software enginner with loads of thrive and motivation 
+                  to learn new thechnologies quicly. I love to solve complex problems.
+                  And design scalable architecture,
                 </p>
                 <ul className="list-unstyled mt-5">
                   <li className="py-2">
