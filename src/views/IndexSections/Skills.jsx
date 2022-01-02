@@ -60,8 +60,8 @@ export default function LandingPage() {
                     System expert
                   </h3>
                   <p>
-                    The moment you use Black Kit, you know you’ve never felt anything like it.
-                    With a single use, this powerfull UI Kit lets you do more than ever before.
+                    Always learning and analyzing system design patterns. And compare one with another. 
+                    Always the focus is on the problem the business is trying to solve.
                   </p>
                   <p className="category text-success d-inline">Proficient</p>
                 </div>
@@ -78,8 +78,9 @@ export default function LandingPage() {
                     Analytical problem solving
                   </h3>
                   <p>
-                    The moment you use Black Kit, you know you’ve never felt anything like it.
-                    With a single use, this powerfull UI Kit lets you do more than ever before.
+                    Many software depends on own set of algorithms which include 
+                    solving comparetively new problems. So I also try to improve 
+                    my data structures skills.
                   </p>
                   <p className="category text-success d-inline">Comfortable</p>
                 </div>

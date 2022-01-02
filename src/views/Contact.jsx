@@ -2,13 +2,10 @@
 import React from "react";
 // reactstrap components
 import {
-  Button,
   Card,
   CardHeader,
   CardBody,
-  FormGroup,
   Form,
-  Input,
   Container,
   Row,
   Col,
@@ -16,6 +13,9 @@ import {
 } from "reactstrap";
 import Navbar from "components/Navbars/Navbar"
 import Footer from 'components/Footer/Footer'
+import {InputFiled} from 'components/Form/Inputs'
+import {CButton} from 'components/Form/Buttons'
+
 export default function ProfilePage() {
   React.useEffect(() => {
     document.body.classList.toggle("profile-page");
@@ -41,41 +41,45 @@ export default function ProfilePage() {
                     <Form>
                       <Row>
                         <Col md="6">
-                          <FormGroup>
-                            <label>Your Name</label>
-                            <Input placeholder="Name" type="text" />
-                          </FormGroup>
+                          <InputFiled 
+                            label='Your name'
+                            placeholder='Name'
+                          />
                         </Col>
                         <Col md="6">
-                          <FormGroup>
-                            <label>Email address</label>
-                            <Input placeholder="email@domain.com" type="email" />
-                          </FormGroup>
+                          <InputFiled 
+                            label='Email address'
+                            placeholder='email@domain.com'
+                            type="email"
+                          />
                         </Col>
                       </Row>
                       <Row>
                         <Col md="6">
-                          <FormGroup>
-                            <label>Phone</label>
-                            <Input placeholder="001-12321345" type="text" />
-                          </FormGroup>
+                          <InputFiled 
+                            label='Phone'
+                            placeholder='001-12321345'
+                            type="phone"
+                          />
                         </Col>
                         <Col md="6">
-                          <FormGroup>
-                            <label>Company</label>
-                            <Input placeholder="Your company" type="text" />
-                          </FormGroup>
+                        <InputFiled 
+                            label='Company'
+                            placeholder='Your company'
+                            type="text"
+                          />
                         </Col>
                       </Row>
                       <Row>
                         <Col md="12">
-                          <FormGroup>
-                            <label>Message</label>
-                            <Input placeholder="Hello there!" type="textarea" />
-                          </FormGroup>
+                          <InputFiled 
+                            label='Message'
+                            placeholder='Hello there!'
+                            type="textarea"
+                          />
                         </Col>
                       </Row>
-                      <Button
+                      <CButton
                         className="btn-round float-right"
                         color="primary"
                         data-placement="right"
@@ -83,7 +87,7 @@ export default function ProfilePage() {
                         type="button"
                       >
                         Send text
-                      </Button>
+                      </CButton>
                       <UncontrolledTooltip
                         delay={0}
                         placement="right"

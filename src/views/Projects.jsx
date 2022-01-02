@@ -34,12 +34,12 @@ export default function ProfilePage() {
     return function cleanup() {
       document.body.classList.toggle("profile-page");
     };
-  },[]);
+  }, []);
   return (
     <>
       <Navbar />
       <div className="wrapper">
-        
+
         <div className="section">
           <Container>
             <Row>
@@ -52,14 +52,11 @@ export default function ProfilePage() {
             </Row>
             <Row className="justify-content-between">
               <Col md="5">
-                <h1 className="profile-title text-left">Projects</h1>
+                <h1 className="profile-title text-left">iMS Systems</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description text-left">
-                  An artist of considerable range, Ryan — the name taken by
-                  Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                  performs and records all of his own music, giving it a warm,
-                  intimate feel with a solid groove structure. An artist of
-                  considerable range.
+                  iMS is a live project that i had built for a UK based company. It was designed to help executives and leaders make informed decisions based on real time data.
+                  This system enables an organisation to feed data into a contextual dashboard, giving assurance and visibility of the organisational state.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button
