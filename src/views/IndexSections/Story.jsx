@@ -1,31 +1,21 @@
-
 import React from "react";
 // reactstrap components
-import {
-  Card,
-  CardBody,
-  CardTitle,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
-
+import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
+import aboutImage from "assets/img/chester-wade.jpg";
 // core components
 export default function LandingPage() {
   return (
     <>
       <section className="section section-lg">
-        <Container><h1 className="text-center">Little about me</h1></Container>
+        <Container>
+          <h1 className="text-center">Little about me</h1>
+        </Container>
       </section>
       <section className="section section-lg section-safe">
         <Container>
           <Row className="row-grid justify-content-between">
             <Col md="5">
-              <img
-                alt="..."
-                className="img-fluid floating"
-                src={require("assets/img/chester-wade.jpg").default}
-              />
+              <img alt="..." className="img-fluid floating" src={aboutImage} />
               <Card className="card-stats bg-danger">
                 <CardBody>
                   <div className="justify-content-center">
@@ -64,9 +54,10 @@ export default function LandingPage() {
                 <hr className="line-success" />
                 <h3>Software engineer</h3>
                 <p>
-                  A driven tech person with loads of thrive and motivation 
-                  to learn new thechnologies quicly. I love to solve complex problems.
-                  And design scalable solutions. I belive these principles
+                  A driven tech person with loads of thrive and motivation to
+                  learn new thechnologies quicly. I love to solve complex
+                  problems. And design scalable solutions. I belive these
+                  principles
                 </p>
                 <ul className="list-unstyled mt-5">
                   <li className="py-2">

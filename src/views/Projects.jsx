@@ -1,27 +1,23 @@
 import React from "react";
-import {
-  Button,
-  Container,
-  Row,
-  Col,
-  UncontrolledCarousel,
-} from "reactstrap";
+import { Button, Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 import Navbar from "components/Navbars/Navbar";
 import Footer from "components/Footer/Footer";
-
+import denys from "assets/img/denys.jpg";
+import fabienBazanegue from "assets/img/fabien-bazanegue.jpg";
+import markFinn from "assets/img/mark-finn.jpg";
 const carouselItems = [
   {
-    src: require("assets/img/denys.jpg").default,
+    src: denys,
     altText: "Slide 1",
     caption: "Big City Life, United States",
   },
   {
-    src: require("assets/img/fabien-bazanegue.jpg").default,
+    src: fabienBazanegue,
     altText: "Slide 2",
     caption: "Somewhere Beyond, United States",
   },
   {
-    src: require("assets/img/mark-finn.jpg").default,
+    src: markFinn,
     altText: "Slide 3",
     caption: "Stocks, United States",
   },
@@ -39,15 +35,14 @@ export default function ProfilePage() {
     <>
       <Navbar />
       <div className="wrapper">
-
         <div className="section">
           <Container>
             <Row>
-              <Col md='12'>
-                <h1 className="text-center mt-5 ">
-                  Weolcome to my showcase
-                </h1>
-                <p className='text-center  mb-5'>Here i've got some of my top projects to show you.</p>
+              <Col md="12">
+                <h1 className="text-center mt-5 ">Weolcome to my showcase</h1>
+                <p className="text-center  mb-5">
+                  Here i've got some of my top projects to show you.
+                </p>
               </Col>
             </Row>
             <Row className="justify-content-between">
@@ -55,8 +50,11 @@ export default function ProfilePage() {
                 <h1 className="profile-title text-left">iMS Systems</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description text-left">
-                  iMS is a live project that i had built for a UK based company. It was designed to help executives and leaders make informed decisions based on real time data.
-                  This system enables an organisation to feed data into a contextual dashboard, giving assurance and visibility of the organisational state.
+                  iMS is a live project that i had built for a UK based company.
+                  It was designed to help executives and leaders make informed
+                  decisions based on real time data. This system enables an
+                  organisation to feed data into a contextual dashboard, giving
+                  assurance and visibility of the organisational state.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button

@@ -1,38 +1,30 @@
-
 import React from "react";
 // reactstrap components
-import {
-  Button,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
-
+import { Button, Container, Row, Col } from "reactstrap";
+import chesterJade from "assets/img/chester-wade.jpg";
 // core components
 export default function LandingPage() {
   return (
     <>
       <section className="section section-lg">
-        <Container><h1 className="text-center">Work experience</h1></Container>
+        <Container>
+          <h1 className="text-center">Work experience</h1>
+        </Container>
       </section>
       <section className="section section-lg">
         <Container>
           <Row className="row-grid justify-content-between align-items-center text-left">
             <Col lg="6" md="6">
               <hr className="line-danger" />
-              <h3 className="text-white">
-                ADDVantage Technologies
-              </h3>
+              <h3 className="text-white">ADDVantage Technologies</h3>
               <p className="text-white mb-3">
                 A wonderful joint tech company that works on digital health and
-                trasformation. <strong>iMS Systems</strong> is a saas that helps organizations to 
-                trasform their business operations digitally. I was the tech lead 
-                at iMS Systems.
+                trasformation. <strong>iMS Systems</strong> is a saas that helps
+                organizations to trasform their business operations digitally. I
+                was the tech lead at iMS Systems.
               </p>
               <div className="btn-wrapper mb-3">
-                <p className="category text-success d-inline">
-                  View company
-                </p>
+                <p className="category text-success d-inline">View company</p>
                 <Button
                   className="btn-link"
                   color="success"
@@ -73,11 +65,7 @@ export default function LandingPage() {
               </div>
             </Col>
             <Col lg="5" md="5">
-              <img
-                alt="..."
-                className="img-fluid"
-                src={require("assets/img/chester-wade.jpg").default}
-              />
+              <img alt="..." className="img-fluid" src={chesterJade} />
             </Col>
           </Row>
         </Container>
