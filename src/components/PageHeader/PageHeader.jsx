@@ -1,7 +1,16 @@
 import React from "react";
-
-import { Container,Button } from "reactstrap";
-
+import { Container, Button } from "reactstrap";
+import resume from "../../assets/reyad.resume.pdf";
+async function downloadResume() {
+  try {
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "reyad_fullstack_swe_resume.pdf";
+    link.click()
+  } catch (error) {
+    console.error("Error downloading file:", error);
+  }
+}
 export default function PageHeader() {
   return (
     <div className="page-header header-filter">
@@ -18,7 +27,7 @@ export default function PageHeader() {
           <h3 className="d-none d-sm-block">
             A passionate problem solver and full stack web application developer
           </h3>
-          <Button className='btn-simple btn-success'>
+          <Button className="btn-simple btn-success" onClick={downloadResume}>
             View my cv
           </Button>
         </div>

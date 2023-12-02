@@ -22,7 +22,7 @@ export default function IndexNavbar() {
     return function cleanup() {
       window.removeEventListener("scroll", changeColor);
     };
-  },[]);
+  }, []);
   const changeColor = () => {
     if (
       document.documentElement.scrollTop > 99 ||
@@ -92,7 +92,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="#"
+                href="https://github.com/RiadHossain43/"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow us on Twitter"
@@ -104,7 +104,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="#"
+                href="https://www.facebook.com/profile.php?id=100007940387935"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Like us on Facebook"
@@ -116,7 +116,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="#"
+                href="https://www.linkedin.com/in/md-reyad-hossain-3036ab194/"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow me on Instagram"
@@ -126,21 +126,23 @@ export default function IndexNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to='/'><p>Dev story</p></NavLink>
+              <NavLink tag={Link} to="/">
+                <p>Dev story</p>
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to='/projects'>
+              <NavLink tag={Link} to="/projects">
                 <p>Projects</p>
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to='/blogs'>
+              <NavLink tag={Link} to="/blogs">
                 <p>Blogs</p>
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to='/contact'>
-                  <p>Contact</p>
+              <NavLink tag={Link} to="/contact">
+                <p>Contact</p>
               </NavLink>
             </NavItem>
           </Nav>
