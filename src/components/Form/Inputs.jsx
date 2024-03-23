@@ -1,13 +1,10 @@
-import {
-  FormGroup,
-  Input,
-} from "reactstrap";
-export function InputFiled({type='text',label,error,...rest}) {
+import { FormGroup, Input } from "reactstrap";
+export function InputFiled({ type = "text", label, error, ...rest }) {
   return (
     <FormGroup>
       <label>{label}</label>
       <Input type={type} {...rest} />
-      {error && <label className='text-danger'>{error}</label>}
+      {error && <small className="text-danger">{error}</small>}
     </FormGroup>
   );
 }

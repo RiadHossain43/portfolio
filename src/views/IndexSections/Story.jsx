@@ -8,13 +8,13 @@ export default function LandingPage() {
     <>
       <section className="section section-lg">
         <Container>
-          <h1 className="text-center">Little about me</h1>
+          <h1 className="text-center">Education & Skills</h1>
         </Container>
       </section>
       <section className="section section-lg section-safe">
         <Container>
           <Row className="row-grid justify-content-between">
-            <Col md="5">
+            {/* <Col md="5">
               <img alt="..." className="img-fluid floating" src={aboutImage} />
               <Card className="card-stats bg-danger">
                 <CardBody>
@@ -48,45 +48,90 @@ export default function LandingPage() {
                   </div>
                 </CardBody>
               </Card>
+            </Col> */}
+            <Col md="6">
+              <div className="px-md-5">
+                <hr className="line-warning" />
+                <h3>Bachelor of Science</h3>
+                <p>
+                  I completed my graduation from from Khulna University of
+                  Engineering and Technology, Khulna with a CGPA of 3.35. My
+                  completed majors were
+                </p>
+                <ul className="list-unstyled mt-5">
+                  <li className="py-2">
+                    <div className="d-flex align-items-center">
+                      <div className="icon icon-warning mb-2">
+                        <i className="tim-icons icon-sound-wave" />
+                      </div>
+                      <div className="ml-3">
+                        <h6>Electronics and Communication Engineering</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="py-2">
+                    <div className="d-flex align-items-center">
+                      <div className="icon icon-warning mb-2">
+                        <i className="tim-icons icon-app" />
+                      </div>
+                      <div className="ml-3">
+                        <h6>Software development and Machine learning</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="py-2">
+                    <div className="d-flex align-items-center">
+                      <div className="icon icon-warning mb-2">
+                        <i className="tim-icons icon-molecule-40" />
+                      </div>
+                      <div className="ml-3">
+                        <h6>Data strucure and Algorithms</h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </Col>
             <Col md="6">
               <div className="px-md-5">
                 <hr className="line-success" />
                 <h3>Software engineer</h3>
                 <p>
-                  A driven tech person with loads of thrive and motivation to
-                  learn new thechnologies quicly. I love to solve complex
-                  problems. And design scalable solutions. I belive these
-                  principles
+                  As a software engineer with 3+ years of experience, I
+                  specialize in full stack development. My primary stack is MERN
+                  and I'm an expert in deploying and maintaining the stack in
+                  different cloud.
                 </p>
                 <ul className="list-unstyled mt-5">
+                  <li className="py-2">
+                    <div className="d-flex align-items-center">
+                      <div className="icon icon-success mb-2">
+                        <i className="tim-icons icon-spaceship" />
+                      </div>
+                      <div className="ml-3">
+                        <h6>Full stack development</h6>
+                      </div>
+                    </div>
+                  </li>
                   <li className="py-2">
                     <div className="d-flex align-items-center">
                       <div className="icon icon-success mb-2">
                         <i className="tim-icons icon-vector" />
                       </div>
                       <div className="ml-3">
-                        <h6>Understand everyones story</h6>
+                        <h6>Javascript, React, Mongodb, SQL, Node Js, OOP</h6>
                       </div>
                     </div>
                   </li>
                   <li className="py-2">
                     <div className="d-flex align-items-center">
                       <div className="icon icon-success mb-2">
-                        <i className="tim-icons icon-tap-02" />
+                        <i className="tim-icons icon-cloud-upload-94" />
                       </div>
                       <div className="ml-3">
-                        <h6>Indentify the needs</h6>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="py-2">
-                    <div className="d-flex align-items-center">
-                      <div className="icon icon-success mb-2">
-                        <i className="tim-icons icon-single-02" />
-                      </div>
-                      <div className="ml-3">
-                        <h6>Work on the resolution</h6>
+                        <h6>
+                          AWS DevOps, IAM, EC2, S3, EB, Cloudfront, Route 53
+                        </h6>
                       </div>
                     </div>
                   </li>

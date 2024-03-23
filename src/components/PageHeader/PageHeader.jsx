@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Button } from "reactstrap";
-import resume from "../../assets/reyad.resume.pdf";
+import resume from "../../assets/reyad-resume.pdf";
 async function downloadResume() {
   try {
     const link = document.createElement("a");

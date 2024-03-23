@@ -142,7 +142,7 @@ export default function ProfilePage() {
                 </div>
               </Col>
               <Col md="6">
-                <Row className="justify-content-between align-items-center">
+                <Row className="h-100 justify-content-between align-items-center">
                   <UncontrolledCarousel items={imsCarouselItems} />
                 </Row>
               </Col>
@@ -153,7 +153,7 @@ export default function ProfilePage() {
           <Container>
             <Row className="justify-content-between">
               <Col md="6">
-                <Row className="justify-content-between align-items-center">
+                <Row className="h-100 justify-content-between align-items-center">
                   <UncontrolledCarousel items={aliceCarouselItems} />
                 </Row>
               </Col>
@@ -224,7 +224,7 @@ export default function ProfilePage() {
                 </div>
               </Col>
               <Col md="6">
-                <Row className="justify-content-between align-items-center">
+                <Row className="h-100 justify-content-between align-items-center">
                   <UncontrolledCarousel items={aliceAddinCarouselItems} />
                 </Row>
               </Col>
@@ -235,14 +235,12 @@ export default function ProfilePage() {
           <Container>
             <Row className="justify-content-between">
               <Col md="6">
-                <Row className="justify-content-between align-items-center">
+                <Row className="h-100 justify-content-between align-items-center">
                   <UncontrolledCarousel items={aiAnalyticsCarouselItems} />
                 </Row>
               </Col>
               <Col md="5">
-                <h1 className="profile-title text-left">
-                  OpenAI based data analytics
-                </h1>
+                <h1 className="profile-title text-left">AI Analytics</h1>
                 <h5 className="text-on-back">04</h5>
                 <p className="profile-description text-left">
                   This is a pet project of mine that actually renders charts

@@ -1,7 +1,8 @@
 import React from "react";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
-import chesterJade from "assets/img/chester-wade.jpg";
+import imsTechnologiesCollege from "assets/img/ims-technologies-college.jpg";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 // core components
 export default function LandingPage() {
   return (
@@ -16,24 +17,26 @@ export default function LandingPage() {
           <Row className="row-grid justify-content-between align-items-center text-left">
             <Col lg="6" md="6">
               <hr className="line-danger" />
-              <h3 className="text-white">ADDVantage Technologies</h3>
+              <h3 className="text-white">iMS Technologies</h3>
               <p className="text-white mb-3">
-                A wonderful joint tech company that works on digital health and
-                trasformation. <strong>iMS Systems</strong> is a saas that helps
+                A wonderful technology company based in UK that works on digital
+                trasformation. <strong>iMS Systems</strong> is a SaaS that helps
                 organizations to trasform their business operations digitally. I
                 was the tech lead at iMS Systems.
               </p>
               <div className="btn-wrapper mb-3">
-                <p className="category text-success d-inline">View company</p>
-                <Button
-                  className="btn-link"
-                  color="success"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                  size="sm"
-                >
-                  <i className="tim-icons icon-minimal-right" />
-                </Button>
+                <a href="https://imssystems.tech">
+                  <p className="category text-success d-inline">View company</p>
+                  <Button
+                    className="btn-link"
+                    color="success"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                    size="sm"
+                  >
+                    <i className="tim-icons icon-minimal-right" />
+                  </Button>
+                </a>
               </div>
               <div className="btn-wrapper">
                 <div className="button-container">
@@ -65,7 +68,11 @@ export default function LandingPage() {
               </div>
             </Col>
             <Col lg="5" md="5">
-              <img alt="..." className="img-fluid" src={chesterJade} />
+              <img
+                alt="..."
+                className="img-fluid"
+                src={imsTechnologiesCollege}
+              />
             </Col>
           </Row>
         </Container>
